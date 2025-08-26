@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://college-grievance-portal.onrender.com',
+  baseURL: 'https://college-grievance-portal.onrender.com/api',
   timeout: 10000,
 });
 
