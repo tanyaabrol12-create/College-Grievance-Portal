@@ -49,7 +49,7 @@ npm install
 
 3. Create a `.env` file in the backend directory:
 ```env
-MONGODB_URI=mongodb://localhost:27017/grievance-portal
+MONGODB_URI=mongodb://localhost:27017/your db name
 JWT_SECRET=your-secret-key-here
 PORT=5000
 ```
@@ -155,8 +155,6 @@ The frontend will run on `http://localhost:3000`
 
 ### For Admin Users
 1. **Login with predefined credentials**:
-   - Dean: admin@cgs.com / admin123
-   - HOD: hod@cgs.com / hod123
 2. **Access all grievances** based on your role
 3. **Update grievance status** as needed
 
@@ -220,17 +218,7 @@ npm start
    - Backend API: http://localhost:5000
 
 ## Admin Credentials
-
-### System Administrator (Dean)
-- **Email**: admin@cgs.com
-- **Password**: admin123
-- **Access Level**: Full access to all grievances
-
-### Head of Department (HOD)
-- **Email**: hod@cgs.com
-- **Password**: hod123
-- **Access Level**: Student and faculty grievances only
-
+-------
 ## Development
 
 ### Adding New Features
