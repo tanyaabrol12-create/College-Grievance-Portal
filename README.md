@@ -1,4 +1,4 @@
-# Central Grievance System
+# College Grievance System
 
 A modern, beautiful web application for managing grievances in educational institutions. Built with React, Material-UI, Node.js, and MongoDB.
 
