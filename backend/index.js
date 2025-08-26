@@ -35,10 +35,10 @@ const initializeAdminUsers = async () => {
     const adminExists = await User.findOne({ email: 'admin2@cgs.com' });
 
     if (!deanExists) {
-      const deanPassword = await bcrypt.hash('admin123', 10);
+      const deanPassword = await bcrypt.hash(process.env.ADMIN_PASS, 10);
       const deanUser = new User({
         name: 'System Administrator (Dean)',
-        email: 'admin@cgs.com',
+        email: 'process.env.ADMIN_ID',
         password: deanPassword,
         role: 'dean',
         department: 'Administration',
@@ -51,10 +51,10 @@ const initializeAdminUsers = async () => {
     }
 
     if (!hodExists) {
-      const hodPassword = await bcrypt.hash('hod123', 10);
+      const hodPassword = await bcrypt.hash(process.env.HOD_PASS, 10);
       const hodUser = new User({
         name: 'Head of Department',
-        email: 'hod@cgs.com',
+        email: process.env.HOD_ID,
         password: hodPassword,
         role: 'hod',
         department: 'General',
@@ -67,10 +67,10 @@ const initializeAdminUsers = async () => {
     }
 
     if (!adminExists) {
-      const adminPassword = await bcrypt.hash('admin456', 10);
+      const adminPassword = await bcrypt.hash(process.env.MAIN_PASS, 10);
       const adminUser = new User({
         name: 'System Administrator',
-        email: 'admin2@cgs.com',
+        email: process.env.MAIN_EMAIL,
         password: adminPassword,
         role: 'admin',
         department: 'IT',
