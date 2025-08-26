@@ -19,7 +19,7 @@ function Dashboard() {
   const fetchGrievances = async () => {
     try {
       setLoading(true);
-      const res = await API.get('/grievances');
+      const res = await API.get('https://college-grievance-portal.onrender.com/grievances');
       setGrievances(res.data);
     } catch (err) {
       setError('Failed to fetch grievances. Please try again.');
