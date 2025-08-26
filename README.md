@@ -87,18 +87,7 @@ The frontend will run on `http://localhost:3000`
 ## User Roles & Access
 
 ### Predefined Admin Users
-
-#### System Administrator (Dean)
-- **Email**: admin@cgs.com
-- **Password**: admin123
-- **Access**: Can view ALL grievances from any user
-- **Permissions**: Full access to all grievance categories
-
-#### Head of Department (HOD)
-- **Email**: hod@cgs.com
-- **Password**: hod123
-- **Access**: Can view student and faculty grievances only
-- **Permissions**: Limited to student and faculty categories
+-----
 
 ### Regular Users (Registration Required)
 
